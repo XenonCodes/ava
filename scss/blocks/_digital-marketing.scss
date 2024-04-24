@@ -1,0 +1,72 @@
+.digital-marketing {
+    background-image: url(./../img/woman-ipad.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right 20px bottom;
+
+    @include large-desktop {
+        background-size: 58%;
+    }
+
+    @include desktop {
+        background-size: 52%;
+    }
+
+    @include mobile {
+        background-size: 60%;
+    }
+
+    &__wrp {
+        min-height: 742px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        
+        @include mobile {
+            min-height: 640px;
+        }
+    }
+
+    &__title {
+        max-width: 427px;
+        @include font(56px, 66px);
+        text-transform: uppercase;
+
+        @include mobile {
+            max-width: 84%;
+            @include font(39px, 45px)
+        }
+    }
+
+    &__text {
+        max-width: 484px;
+        font-family: 'Roboto', sans-serif;
+        margin: 52px 0 17px;
+
+        @include mobile {
+            max-width: 90%;
+            margin: 26px 0 17px;
+        }
+    }
+
+    &__wrp-employee {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    &__employee-name {
+        @include font(18px, 28px);
+        text-transform: uppercase;
+    }
+
+    &__list {
+        margin: 10px 0 0 0;
+        display: flex;
+    }
+
+    &__button {
+        margin: 40px 0 0 0;
+    }
+}

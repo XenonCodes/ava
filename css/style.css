@@ -92,7 +92,43 @@ body {
 }
 @media (max-width: 576px) {
   .container {
-    width: 435px;
+    width: 90%;
+  }
+}
+
+.button {
+  background-color: #0057FF;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  border: none;
+  padding: 14px 40px;
+  border-radius: 30px;
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  font-style: normal;
+}
+@media (max-width: 768px) {
+  .button {
+    padding: 6px 24px;
+    font-size: 11px;
+    line-height: 20px;
+    font-weight: 400;
+    font-style: normal;
+  }
+}
+@media (max-width: 576px) {
+  .button {
+    display: none;
+  }
+}
+.button_orange {
+  background-color: #FF8E32;
+}
+@media (max-width: 576px) {
+  .button_orange {
+    display: block;
   }
 }
 
@@ -140,6 +176,11 @@ body {
   padding: 0 10px;
   text-transform: uppercase;
 }
+@media (max-width: 576px) {
+  .header__item {
+    padding: 0 5px;
+  }
+}
 .header__links {
   color: #000000;
   text-decoration: none;
@@ -156,30 +197,99 @@ body {
     font-style: normal;
   }
 }
-.header__button {
-  background-color: #0057FF;
-  color: #FFFFFF;
-  text-transform: uppercase;
-  border: none;
-  padding: 14px 40px;
-  border-radius: 30px;
-  font-family: "Oswald", sans-serif;
-  font-size: 14px;
-  line-height: 24px;
+
+.digital-marketing {
+  background-image: url(./../img/woman-ipad.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right 20px bottom;
+}
+@media (max-width: 1200px) {
+  .digital-marketing {
+    background-size: 58%;
+  }
+}
+@media (max-width: 992px) {
+  .digital-marketing {
+    background-size: 52%;
+  }
+}
+@media (max-width: 576px) {
+  .digital-marketing {
+    background-size: 60%;
+  }
+}
+.digital-marketing__wrp {
+  min-height: 742px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+@media (max-width: 576px) {
+  .digital-marketing__wrp {
+    min-height: 640px;
+  }
+}
+.digital-marketing__title {
+  max-width: 427px;
+  font-size: 56px;
+  line-height: 66px;
   font-weight: 400;
   font-style: normal;
+  text-transform: uppercase;
 }
-@media (max-width: 768px) {
-  .header__button {
-    padding: 6px 24px;
-    font-size: 11px;
-    line-height: 20px;
+@media (max-width: 576px) {
+  .digital-marketing__title {
+    max-width: 84%;
+    font-size: 39px;
+    line-height: 45px;
     font-weight: 400;
     font-style: normal;
   }
 }
+.digital-marketing__text {
+  max-width: 484px;
+  font-family: "Roboto", sans-serif;
+  margin: 52px 0 17px;
+}
 @media (max-width: 576px) {
-  .header__button {
-    display: none;
+  .digital-marketing__text {
+    max-width: 90%;
+    margin: 26px 0 17px;
   }
+}
+.digital-marketing__wrp-employee {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+.digital-marketing__employee-name {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+}
+.digital-marketing__list {
+  margin: 10px 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.digital-marketing__button {
+  margin: 40px 0 0 0;
 }/*# sourceMappingURL=style.css.map */
