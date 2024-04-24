@@ -1,0 +1,41 @@
+body {
+    font-family: 'Oswald', sans-serif;
+    @include font();
+    color: $black;
+}
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+//desktop 1200
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+
+    @include large-desktop {
+        width: 992px;
+    }
+
+    @include desktop {
+        width: 768px;
+    }
+
+    @include tablet {
+        width: 576px;
+    }
+
+    @include mobile {
+        width: 435px;
+    }
+}
