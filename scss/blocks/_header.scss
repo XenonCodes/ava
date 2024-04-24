@@ -33,6 +33,10 @@
         padding: 0 10px;
         // margin: 0 20px 0 0;
         text-transform: uppercase;
+
+        @include mobile {
+            padding: 0 5px;
+        }
     }
 
     &__links {
@@ -41,27 +45,6 @@
         @include font(14px, 26px);
         @include tablet {
             @include font(11px, 20px);
-        }
-    }
-
-    &__button {
-        background-color: $blue;
-        color: $white;
-        text-transform: uppercase;
-        border: none;
-        padding: 14px 40px;
-        border-radius: 30px;
-        font-family: 'Oswald', sans-serif;
-
-        @include font(14px, 24px);
-
-        @include tablet {
-            padding: 6px 24px;
-            @include font(11px, 20px);
-        }
-
-        @include mobile {
-            display: none;
         }
     }
 }

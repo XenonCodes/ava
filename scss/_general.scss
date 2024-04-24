@@ -36,6 +36,35 @@ body {
     }
 
     @include mobile {
-        width: 435px;
+        width: 90%;
+    }
+}
+
+.button {
+    background-color: $blue;
+    color: $white;
+    text-transform: uppercase;
+    border: none;
+    padding: 14px 40px;
+    border-radius: 30px;
+    font-family: 'Oswald', sans-serif;
+
+    @include font(14px, 24px);
+
+    @include tablet {
+        padding: 6px 24px;
+        @include font(11px, 20px);
+    }
+
+    @include mobile {
+        display: none;
+    }
+
+    &_orange {
+        background-color: $orange;
+
+        @include mobile {
+            display: block;
+        }
     }
 }
