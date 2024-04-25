@@ -1,0 +1,70 @@
+.footer {
+    background-color: $black;
+
+    & nav {
+        @include mobile {
+            display: flex;
+        }
+    }
+
+    &__wrp {
+        min-height: 152px;
+        display: flex;
+        justify-content: space-between;
+        padding: 61px 0 41px;
+
+        @include mobile {
+            padding: 24px 0 20px;
+            align-items: center;
+        }
+    }
+
+    &__ava-logo {
+        margin: 10px 0 63px;
+
+        @include tablet {
+            margin: 10px 0 26px;
+        }
+    }
+
+    &__text {
+        @include font(11px, 22px);
+        color: $grey;
+        text-transform: uppercase;
+        text-decoration: none;
+
+        &_white {
+            color: $white;
+        }
+    }
+
+    &__list-pages {
+        display: flex;
+        gap: 20px;
+
+        @include tablet {
+            gap: 10px;
+        }
+
+        @include mobile {
+            padding: 0 0 0 10px;
+            flex-direction: column;
+        }
+    }
+
+    &__list-social {
+        display: flex;
+        justify-content: flex-end;
+        gap: 4px;   
+        margin: 70px 0 0 0;
+
+        @include tablet {
+            margin: 40px 0 0 0;
+        }
+
+        @include mobile {
+            margin: 0px 0px 0px 22px;
+            flex-direction: column;
+        }
+    }
+}

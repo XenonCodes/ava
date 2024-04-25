@@ -70,29 +70,34 @@ body {
   margin: -1px;
 }
 
+.show-menu {
+  display: block !important;
+  overflow: hidden;
+}
+
 .container {
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0;
 }
 @media (max-width: 1200px) {
   .container {
-    width: 992px;
+    max-width: 992px;
   }
 }
 @media (max-width: 992px) {
   .container {
-    width: 768px;
+    max-width: 768px;
   }
 }
 @media (max-width: 768px) {
   .container {
-    width: 576px;
+    max-width: 576px;
   }
 }
 @media (max-width: 576px) {
   .container {
-    width: 90%;
+    max-width: 90%;
   }
 }
 
@@ -152,6 +157,22 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
+@media (max-width: 576px) {
+  .header__menu {
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+.header__mobile-menu-button {
+  display: none;
+}
+@media (max-width: 576px) {
+  .header__mobile-menu-button {
+    display: block;
+  }
+}
 .header__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -172,9 +193,33 @@ body {
     gap: 5px;
   }
 }
+@media (max-width: 576px) {
+  .header__list {
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: absolute;
+    top: 71px;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #dddddd;
+    margin: 0;
+    padding: 20px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+}
 .header__item {
   padding: 0 10px;
   text-transform: uppercase;
+}
+@media (max-width: 768px) {
+  .header__item {
+    padding: 0 9px;
+  }
 }
 @media (max-width: 576px) {
   .header__item {
@@ -193,6 +238,14 @@ body {
   .header__links {
     font-size: 11px;
     line-height: 20px;
+    font-weight: 400;
+    font-style: normal;
+  }
+}
+@media (max-width: 576px) {
+  .header__links {
+    font-size: 50px;
+    line-height: 100px;
     font-weight: 400;
     font-style: normal;
   }
@@ -292,4 +345,97 @@ body {
 }
 .digital-marketing__button {
   margin: 40px 0 0 0;
+}
+
+.footer {
+  background-color: #000000;
+}
+@media (max-width: 576px) {
+  .footer nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+.footer__wrp {
+  min-height: 152px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 61px 0 41px;
+}
+@media (max-width: 576px) {
+  .footer__wrp {
+    padding: 24px 0 20px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+.footer__ava-logo {
+  margin: 10px 0 63px;
+}
+@media (max-width: 768px) {
+  .footer__ava-logo {
+    margin: 10px 0 26px;
+  }
+}
+.footer__text {
+  font-size: 11px;
+  line-height: 22px;
+  font-weight: 400;
+  font-style: normal;
+  color: #999999;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.footer__text_white {
+  color: #FFFFFF;
+}
+.footer__list-pages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+@media (max-width: 768px) {
+  .footer__list-pages {
+    gap: 10px;
+  }
+}
+@media (max-width: 576px) {
+  .footer__list-pages {
+    padding: 0 0 0 10px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+.footer__list-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  gap: 4px;
+  margin: 70px 0 0 0;
+}
+@media (max-width: 768px) {
+  .footer__list-social {
+    margin: 40px 0 0 0;
+  }
+}
+@media (max-width: 576px) {
+  .footer__list-social {
+    margin: 0px 0px 0px 22px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }/*# sourceMappingURL=style.css.map */
