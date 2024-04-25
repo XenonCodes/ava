@@ -16,6 +16,11 @@
         <div class="container header__wrp">
             <nav class="header__menu">
                 <img class="header__logo" src="./img/logo.png" alt="logo">
+                <svg class="header__mobile-menu-button" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+                    fill="black" width="50px" height="50px">
+                    <path
+                        d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+                </svg>
                 <ul class="header__list">
                     <li class="header__item"><a class="header__links" href="#">Home</a></li>
                     <li class="header__item"><a class="header__links" href="#">About</a></li>
@@ -56,9 +61,33 @@
 
     </main>
 
-    <footer>
-
+    <footer class="footer">
+        <div class="container footer__wrp">
+            <div>
+                <img class="footer__ava-logo" src="./img/ava-logo.png" alt="logo">
+                <p class="footer__text">Created with love by <span class="footer__text footer__text_white">Dorian
+                        Hoxha</span> | Powered by <span class="footer__text footer__text_white">Webflow</span></p>
+            </div>
+            <nav>
+                <ul class="footer__list-pages">
+                    <li><a class="footer__text footer__text_white" href="#">Style-guide</a></li>
+                    <li><a class="footer__text footer__text_white" href="#">Licenses</a></li>
+                    <li><a class="footer__text footer__text_white" href="#">Changelog</a></li>
+                    <li><a class="footer__text footer__text_white" href="#">Terms</a></li>
+                    <li><a class="footer__text footer__text_white" href="#">Password</a></li>
+                    <li><a class="footer__text footer__text_white" href="#">404</a></li>
+                </ul>
+                <ul class="footer__list-social">
+                    <li><a href="#"><img src="./img/facebook-logo.png" alt="facebook-logo"></a></li>
+                    <li><a href="#"><img src="./img/twitter-logo.png" alt="twitter-logo"></a></li>
+                    <li><a href="#"><img src="./img/v-logo.png" alt="v-logo"></a></li>
+                    <li><a href="#"><img src="./img/pinterest-logo.png" alt="pinterest-logo"></a></li>
+                </ul>
+            </nav>
+        </div>
     </footer>
+
+    <script src="./js/main.js"></script>
 </body>
 
 </html>

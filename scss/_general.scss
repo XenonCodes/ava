@@ -17,26 +17,31 @@ body {
     margin: -1px;
 }
 
+.show-menu {
+    display: block !important;
+    overflow: hidden;
+}
+
 //desktop 1200
 .container {
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0;
 
     @include large-desktop {
-        width: 992px;
+        max-width: 992px;
     }
 
     @include desktop {
-        width: 768px;
+        max-width: 768px;
     }
 
     @include tablet {
-        width: 576px;
+        max-width: 576px;
     }
 
     @include mobile {
-        width: 90%;
+        max-width: 90%;
     }
 }
 

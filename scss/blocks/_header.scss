@@ -10,6 +10,19 @@
     &__menu {
         display: flex;
         align-items: center;
+
+        @include mobile {
+            width: 100%;
+            justify-content: space-between;
+        }
+    }
+
+    &__mobile-menu-button {
+        display: none;
+
+        @include mobile {
+            display: block;
+        }
     }
 
     &__list {
@@ -27,12 +40,29 @@
             margin: 0 10px;
             gap: 5px;
         }
+
+        @include mobile {
+            display: none;
+            flex-direction: column;
+            position: absolute;
+            top: 71px;
+            right: 0;
+            width: 100%;
+            height: 100vh;
+            background-color: #dddddd;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
     }
 
     &__item {
         padding: 0 10px;
-        // margin: 0 20px 0 0;
         text-transform: uppercase;
+
+        @include tablet {
+            padding: 0 9px;
+        }
 
         @include mobile {
             padding: 0 5px;
@@ -43,8 +73,13 @@
         color: $black;
         text-decoration: none;
         @include font(14px, 26px);
+
         @include tablet {
             @include font(11px, 20px);
+        }
+
+        @include mobile {
+            @include font(50px, 100px);
         }
     }
 }
