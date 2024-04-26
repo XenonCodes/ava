@@ -12,8 +12,12 @@
         background-size: 52%;
     }
 
+    @include tablet {
+        background-size: 43%;
+    }
+
     @include mobile {
-        background-size: 60%;
+        background-size: 45%;
     }
 
     &__wrp {
@@ -22,9 +26,17 @@
         flex-direction: column;
         justify-content: center;
         align-items: start;
+
+        @include large-desktop {
+            min-height: 616px;
+        }
+
+        @include tablet {
+            min-height: 545px;
+        }
         
         @include mobile {
-            min-height: 640px;
+            min-height: 477px;
         }
     }
 
