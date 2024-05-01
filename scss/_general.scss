@@ -2,6 +2,11 @@ body {
     font-family: 'Oswald', sans-serif;
     @include font();
     color: $black;
+    overflow-x: hidden;
+}
+
+.overflow-hidden {
+    overflow: hidden;
 }
 
 .visually-hidden {
@@ -48,6 +53,7 @@ body {
     background-color: $blue;
     color: $white;
     text-transform: uppercase;
+    text-decoration: none;
     border: none;
     padding: 14px 40px;
     border-radius: 30px;
@@ -60,15 +66,13 @@ body {
         @include font(11px, 20px);
     }
 
-    @include mobile {
-        display: none;
+    &_hidden {
+        @include mobile {
+            display: none;
+        }
     }
 
     &_orange {
         background-color: $orange;
-
-        @include mobile {
-            display: block;
-        }
     }
 }

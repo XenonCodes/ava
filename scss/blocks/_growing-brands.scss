@@ -1,0 +1,84 @@
+.growing-brands {
+
+    &__wrp {
+        padding: 100px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @include tablet {
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+
+    &__title {
+        max-width: 455px;
+        @include font(40px, 50px);
+        margin: 0 0 48px 0;
+        text-transform: uppercase;
+
+        @include desktop {
+            max-width: 300px;
+        }
+
+        @include tablet {
+            max-width: 95%;
+        }
+    }
+
+    &__text {
+        font-family: 'Roboto', sans-serif;
+        max-width: 488px;
+        @include font(15px, 26px);
+
+        @include desktop {
+            max-width: 300px;
+        }
+
+        @include tablet {
+            max-width: 100%;
+        }
+    }
+
+    &__list {
+        display: flex;
+        margin: 37px 0 30px;
+
+        @include tablet {
+            justify-content: center;
+        }
+    }
+
+    &__item {
+        max-width: 212px;
+        margin: 0 77px 0 0;
+
+        @include desktop {
+            max-width: 126px;
+            margin: 0 30px 0 0;
+        }
+    }
+
+    &__item-title {
+        @include font(25px, 36px);
+        text-transform: uppercase;
+        margin: 28px 0 16px;
+    }
+
+    &__item-text {
+        max-width: 195px;
+        font-family: 'Roboto', sans-serif;
+        @include font(14px, 24px);
+    }
+
+    &__link {
+        display: inline-block;
+    }
+
+    &__form {
+        @include tablet {
+            margin: 25px 0 0;
+        }
+    }
+}
