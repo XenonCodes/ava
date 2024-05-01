@@ -1,0 +1,131 @@
+.form-sending {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    max-width: 540px;
+    box-shadow: 0px 8px 28px 0px rgba(83, 83, 83, 0.15);
+    border-radius: 15px;
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        height: 100px;
+        width: 100px;
+        top: 15%;
+        left: -10%;
+        background-image: url(./../img/decorative-triangle.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+
+        @include desktop {
+            height: 50px;
+            width: 50px;
+        }
+
+        @include tablet {
+            height: 75px;
+            width: 75px;
+        }
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        height: 200px;
+        width: 200px;
+        right: -10%;
+        bottom: 10.6%;
+        background-image: url(./../img/decorative-green-triangle.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+
+        @include desktop {
+            height: 100px;
+            width: 100px;
+        }
+
+        @include tablet {
+            height: 150px;
+            width: 150px;
+        }
+    }
+
+    @include desktop {
+        max-width: 350px;
+    }
+
+    @include tablet {
+        max-width: 100%;
+    }
+
+    &__wrp {
+        display: flex;
+        flex-direction: column;
+        padding: 0 40px 50px;
+    }
+
+    &__img {
+        border-radius: 15px 15px 0 0;
+    }
+
+    &__title {
+        @include font(29px, 40px);
+        margin: 57px 0 26px;
+        text-transform: uppercase;
+
+        @include desktop {
+            margin: 30px 0 26px;
+        }
+    }
+
+    &__text {
+        font-family: 'Roboto', sans-serif;
+        margin: 0 0 17px;
+    }
+
+    &__container {
+        display: flex;
+        gap: 25px;
+        margin: 0 0 32px;
+
+        @include desktop {
+            flex-direction: column;
+        }
+    }
+
+    &__input {
+        @include font(14px, 60px);
+        padding: 0 26px 0;
+        box-sizing: border-box;
+        border: 1px solid rgb(231, 231, 231);
+        border-radius: 6px;
+        background-color: #F8F8F8;
+
+        @include desktop {
+            @include font(14px, 45px);
+        }
+
+        &_limited-width {
+            max-width: 218px;
+        }
+    }
+
+    &__textarea {
+        margin: 32px 0 42px;
+        padding: 0 140px 0 26px;
+        font-family: 'Roboto', sans-serif;
+        @include font(14px, 30px);
+        min-height: 140px;
+        resize: unset;
+        box-sizing: border-box;
+        border: 1px solid rgb(231, 231, 231);
+        border-radius: 6px;
+        background-color: #F8F8F8;
+
+        @include desktop {
+            margin: 29px 0 26px;
+            padding: 0 50px 0 26px;
+        }
+    }
+}
