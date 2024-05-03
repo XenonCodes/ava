@@ -25,6 +25,10 @@
         @include tablet {
             max-width: 95%;
         }
+
+        @include mobile {
+            @include font(39px, 45px);
+        }
     }
 
     &__text {
