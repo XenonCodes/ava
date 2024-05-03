@@ -1,0 +1,98 @@
+.world-over {
+    background-image: url(./../img/decorative-triangle.png);
+    background-repeat: no-repeat;
+    background-position: bottom 2% left 4.16%;
+
+    &__wrp {
+        display: flex;
+        justify-content: space-between;
+        padding: 80px 0;
+
+        @include tablet {
+            flex-direction: column;
+        }
+    }
+
+    &__img {
+        width: 100%;
+    }
+
+    &__container {
+        padding: 10px;
+        max-width: 482px;
+    }
+
+    &__title {
+        @include font(40px, 50px);
+        text-transform: uppercase;
+    }
+
+    &__text {
+        font-family: 'Roboto', sans-serif;
+        @include font(15px, 26px);
+        margin: 48px 0 58px;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+        border: 1px solid #ebe9e9;
+        border-radius: 25px;
+        padding: 30px 40px;
+
+        @include desktop {
+            gap: 40px;
+        }
+    }
+
+    &__item {
+        position: relative;
+        text-transform: uppercase;
+
+        &::marker {
+            content: '';
+            display: none;
+        }
+
+        &::after {
+            position: absolute;
+            right: -18px;
+            top: 50%;
+            content: '';
+            display: block;
+            height: 2px;
+            width: 18px;
+            background-color: $blue;
+            transform: rotate(90deg);
+            transition: all 1s;
+        }
+
+        &::before {
+            position: absolute;
+            right: -18px;
+            top: 50%;
+            content: '';
+            display: block;
+            height: 2px;
+            width: 18px;
+            background-color: $blue;
+            transform: rotate(180deg);
+            transition: all 1s;
+        }
+    }
+
+    &__item-text {
+        margin: 15px 0 0;
+        font-family: 'Roboto', sans-serif;
+        @include font(15px, 26px);
+    }
+
+    & details[open]>summary::before {
+        transform: rotate(45deg);
+    }
+
+    & details[open]>summary::after {
+        transform: rotate(-45deg);
+    }
+}
