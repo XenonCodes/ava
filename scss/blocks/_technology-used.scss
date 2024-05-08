@@ -1,0 +1,92 @@
+.technology-used {
+
+    &__wrp {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 80px 0;
+
+        @include tablet {
+            flex-direction: column;
+        }
+    }
+
+    &__container {
+        max-width: 45%;
+        padding: 0 10px 0 0;
+
+        @include tablet {
+            max-width: 100%;
+        }
+    }
+
+    &__title {
+        max-width: 388px;
+        @include font(40px, 50px);
+        text-transform: uppercase;
+    }
+
+    &__text {
+        font-family: 'Roboto', sans-serif;
+        max-width: 508px;
+        @include font(14px, 24px);
+        margin: 49px 0 46px;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 44px;
+    }
+
+    &__item {
+        padding: 0 0 0 10px;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        @include font(19px, 30px);
+        text-transform: uppercase;
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 4px;
+            left: 0;
+            bottom: -10px;
+            background-color: #EBEBEB;
+            border-radius: 25px;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: 85%;
+            height: 4px;
+            left: 0;
+            bottom: -10px;
+            background-color: $blue;
+            border-radius: 25px;
+        }
+
+        &_education {
+            &::after {
+                width: 65%;
+                background-color: $violet;
+            }
+        }
+
+        &_strategy {
+            &::after {
+                width: 72%;
+                background-color: $orange;
+            }
+        }
+    }
+
+    &__cart {
+        @include tablet {
+            margin: 55px 0 0;
+        }
+    }
+}
