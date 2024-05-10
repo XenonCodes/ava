@@ -210,63 +210,8 @@
             </div>
         </section>
 
-        <!-- <section class="swiper mySwiper ">
-            <div class="container swiper__wrp swiper-wrapper">
-                <div class="swiper__cart swiper-slide">
-                    <p class="swiper__text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius
-                        enim in eros elementum tristique. "</p>
-                    <div class="swiper__img">
-                        <img src="./img/avatar-martin.png" alt="avatar-employee">
-                    </div>
-                    <h2 class="swiper__employee">Martin Eduard</h2>
-                    <p class="swiper__specialization">CEO of Marketing</p>
-                    <ul class="swiper__list">
-                        <li><img src="./img/star.png" alt="star-icon"></li>
-                        <li><img src="./img/star.png" alt="star-icon"></li>
-                        <li><img src="./img/star.png" alt="star-icon"></li>
-                        <li><img src="./img/star.png" alt="star-icon"></li>
-                        <li><img src="./img/star.png" alt="star-icon"></li>
-                    </ul>
-                </div>
-
-                <div class="swiper__cart">
-                    <p class="swiper__text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius
-                        enim in eros elementum tristique. "</p>
-                    <div class="swiper__img">
-                        <img src="./img/avatar-martin-2.png" alt="avatar-employee">
-                    </div>
-                    <h2 class="swiper__employee">Martin Eduard</h2>
-                    <p class="swiper__specialization">CEO of Marketing</p>
-                    <ul class="swiper__list">
-                        <li><img src="./img/star.png" alt="star-icon"></li>
-                        <li><img src="./img/star.png" alt="star-icon"></li>
-                        <li><img src="./img/star.png" alt="star-icon"></li>
-                        <li><img src="./img/star.png" alt="star-icon"></li>
-                        <li><img src="./img/star.png" alt="star-icon"></li>
-                    </ul>
-                </div>
-
-                <div class="swiper__cart">
-                    <p class="swiper__text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius
-                        enim in eros elementum tristique. "</p>
-                    <div class="swiper__img">
-                        <img src="./img/avatar-martin-3.png" alt="avatar-employee">
-                    </div>
-                    <h2 class="swiper__employee">Martin Eduard</h2>
-                    <p class="swiper__specialization">CEO of Marketing</p>
-                    <ul class="swiper__list">
-                        <li><img src="./img/star.png" alt="star-icon"></li>
-                        <li><img src="./img/star.png" alt="star-icon"></li>
-                        <li><img src="./img/star.png" alt="star-icon"></li>
-                        <li><img src="./img/star.png" alt="star-icon"></li>
-                        <li><img src="./img/star.png" alt="star-icon"></li>
-                    </ul>
-                </div>
-            </div>
-        </section> -->
-
         <section class="swiper mySwiper">
-            <ul class="container swiper-wrapper swiper__wrp">
+            <ul class="swiper-wrapper swiper__wrp">
                 <li class="swiper__cart swiper-slide">
                     <p class="swiper__text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius
                         enim in eros elementum tristique. "</p>
@@ -353,6 +298,8 @@
                     </ul>
                 </li>
             </ul>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
             <div class="swiper-pagination"></div>
         </section>
 
@@ -388,24 +335,7 @@
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- Initialize Swiper -->
-    <script>
-        let swiper = new Swiper(".mySwiper", {
-            effect: "coverflow",
-            grabCursor: true,
-            centeredSlides: true,
-            slidesPerView: "auto",
-            coverflowEffect: {
-                rotate: 10,
-                stretch: 10,
-                depth: 10,
-                modifier: 1,
-                slideShadows: false,
-            },
-            pagination: {
-                el: ".swiper-pagination",
-            },
-        });
-    </script>
+    <script src="./js/swiper.js"></script>
 </body>
 
 </html>
