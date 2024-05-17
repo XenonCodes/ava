@@ -1,0 +1,55 @@
+.customers {
+    text-align: center;
+    background-image: url(./../img/decorative-grey-triangle.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+
+    &__wrp {
+        padding: 125px 0 90px;
+    }
+
+    &__title {
+        color: $blue;
+        @include font(12px, 22px);
+        text-transform: uppercase;
+    }
+
+    &__text {
+        font-family: 'Roboto', sans-serif;
+        max-width: 776px;
+        @include font(24px, 34px);
+        margin: 23px auto 37px;
+    }
+
+    &__link {
+        display: inline-block;
+        margin: 0 0 130px 0;
+
+        @include mobile {
+            margin: 0 0 30px 0;
+        }
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        padding: 65px 0;
+
+        @include desktop {
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        @include mobile {
+            flex-wrap: nowrap;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    &__item {
+        @include desktop {
+            width: 31.6%;
+        }
+    }
+}
