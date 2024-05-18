@@ -1,0 +1,39 @@
+.news {
+    display: flex;
+    text-align: left;
+    padding: 21px;
+    box-sizing: border-box;
+    border: 1px solid rgb(217, 220, 236);
+    border-radius: 10px;
+
+    &__wrp {
+        padding: 20px 30px;
+
+        @include desktop {
+            padding: 20px 20px;
+        }
+    }
+
+    &__img {
+        @include desktop {
+            max-width: 187px;
+        }
+    }
+
+    &__header {
+        @include font(11px, 20px);
+        color: $blue;
+        text-transform: uppercase;
+    }
+
+    &__title {
+        @include font(20px, 30px);
+        text-transform: uppercase;
+        margin: 0 0 24px 0;
+    }
+
+    &__text {
+        font-family: 'Roboto', sans-serif;
+        @include font(14px, 24px);
+    }
+}
